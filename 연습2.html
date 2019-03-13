@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h3>기말고사 점수 고치기</h3>
+  <hr>
+  <script>
+      var score1 =parseInt(prompt("국어성적은?",""));
+      var score2 =parseInt(prompt("영어성적은?",""));
+      var score3 =parseInt(prompt("수학성적은?",""));
+      var score4 =parseInt(prompt("사회성적은?",""));
+      var score5 =parseInt(prompt("과학성적은?",""));
+      document.write("현재성적은 국: "+score1+"영: "+score2+" 수: "+score3+" 사: "+score4+" 과: "+score5+"<br>");
+      var newsc =[score1,score2,score3,score4,score5];
+      var max=newsc.sort(arr);
+      document.write(max);
+      var max2=max.charAt(0);
+      for(var i=0;i<newsc.length;i++) {
+        var resc=newsc[i]/max2*100
+        document.write("새로운 성적은 각각"+resc);
+        function arr(a,b) {
+          return b-a;
+        }
+      }
+  </script>
+</body>
+</html>

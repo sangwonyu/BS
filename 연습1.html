@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    var question = prompt("n개의 정수를 나열하시오.(','으로써 숫자를 구분하시오.)","");
+
+    var any=parseInt(prompt("원하는 수를 입력하세요(입력한 수보다 작은 수가 출력됩니다.)",""));
+    var quesArray=question.split(",");
+    for(var i=0;i<quesArray.length;i++) {
+      document.write(quesArray[i]+"&nbsp;");
+    }document.write("<br>");
+    for(var i=0; i<parseInt(quesArray.length);i++) {
+      if(any>quesArray[i]) {
+        document.write(quesArray[i]+"&nbsp;");
+      }
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>
