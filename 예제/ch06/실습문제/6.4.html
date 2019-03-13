@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>출근</title>
+</head>
+<body>
+  <h3>월화수목금토일</h3>
+  <hr>
+  <script>
+    var start =prompt("월화수목금토일 중에서 입력하세요","수")
+    switch(start) {
+      case "월" :
+      case "화" :
+      case "수" :
+      case "목" : document.write(start+" 는 출근")
+       break;
+      default : document.write(start+" 는 휴일")
+    }
+
+  </script>
+</body>
+</html>

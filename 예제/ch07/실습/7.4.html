@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>일요일은 pink 다른요일은gold</title>
+</head>
+<body>
+  <h3>일요일은 pink 다른요일은gold</h3>
+  <hr>
+  <script>
+    var current=new Date();
+    document.write(current.getDay());
+    if(current.getDay()==0) {
+      document.body.style.backgroundColor="pink";
+    } else document.body.style.backgroundColor="gold";
+    document.write(current.toLocaleString(),"<br>")
+  </script>
+</body>
+</html>

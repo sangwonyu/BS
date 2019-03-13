@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>라디오 버튼을 클릭하면 이미지를 출력합니다.</title>
+  <script>
+    function che(obj) {
+      var aa=document.getElementsByName("yu")
+      for(var i=0; i<aa.length;i++) {
+        if(aa[i].checked) {
+          var obj=document.getElementById("imgs");
+          obj.src=aa[i].value;
+        }
+      }
+  
+    }
+    function cancl() {
+      var ca =document.getElementsByName("yu");
+    for(var i=0;i<ca.length;i++) {
+      if(ca[i].checked) {
+        ca[i].checked==false;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <form onclick="cancl()" onchange="che(this)">
+    <input type="radio" name="yu" value="실습media/banana.png">바나나
+    <input type="radio" name="yu" value="실습media/mango.png" checked>망고
+    <input type="radio" name="yu" value="실습media/apple.png">사과
+  </form>
+  <img src="실습media/mango.png" id="imgs"  alt=".">
+</body>
+</html>

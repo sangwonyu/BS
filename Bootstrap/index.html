@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩 Openchallenge</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- 부트스트랩 -->
+    <style>
+    </style>
+  </head>
+  <body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">가나다</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="jumbotron">
+  <div class="container"></div>
+  <h1>Hello, world!</h1>
+  <p>A quick brown fox jumps over the lazy dog.</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <table class="table table-hover">
+        <tr><td class="col-md-5">생일</td><td class="col-md-2"><input type="date" value="2019-08-25"></td>
+          <td class="col-md-5"><button type="button" class="btn btn-default">Birth</button></td></tr>
+        <tr><td >생일파티시간</td><td><input type="time">
+          </td><td><button type="button" class="btn btn-primary">Time</button></td></tr>
+        <tr><td>생일파티장소</td><td><input type="text"></td>
+          <td><button type="button" class="btn btn-success">Locate</button></td></tr>
+      </table>
+    </div>
+  </div>
+  <form class="form-inline" >
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail3">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword3">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+    </div>
+    <div class="checkbox">&nbsp;&nbsp;&nbsp;
+      <label>
+        <input type="checkbox"> 암호 기억&nbsp;&nbsp;&nbsp;
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">로그인</button>
+  </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

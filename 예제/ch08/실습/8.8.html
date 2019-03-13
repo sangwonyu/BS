@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>스폰지밥</title>
+
+</head>
+<body>
+  <h3>클릭하면2,3,4배 옆으로 늘어납니다.</h3>
+  <hr>
+  <img onclick="cli(this)" src="media/spongebob.png"
+        alt="no">
+
+  <script>
+    var i = 1;
+    function cli(obj) {
+
+      i+=1;
+      obj.style.transform="scale("+i+",1)";
+      if(i>4)
+        return;
+    }
+  </script>
+</body>
+</html>

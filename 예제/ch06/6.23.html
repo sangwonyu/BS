@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function sum(init,final,inc) {
+      var total=0;
+      for (var i =init; i<= final; i+=inc)
+        total+=1;
+        return total;
+    }
+  </script>
+</head>
+<body>
+  <script>
+    var sum0 = sum(1,1000,1);
+    var sum1 = sum(1,1000,2);
+    var sum2 = sum(2,1000,2);
+    document.write(sum0+", "+sum1+"," +sum2+"<br>")
+  </script>
+</body>
+</html>

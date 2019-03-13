@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <table>
+    <caption>회원가입</caption>
+    <tbody>
+      <tr><td>아이디 :</td><td><input type="text"value=""></td></tr>
+      <tr><td >패스워드 :</td><td><input type="password" id="passWord" ></td></tr>
+      <tr><td >패스워드 확인 :</td><td><input type="password" id="passcor"></td></tr>
+      <tr><td>e-mail :</td><td><input type="email" id="emai"></td></tr>
+      <tr><td>휴대폰 :</td><td><input id="phon" type="text"></td></tr>
+      </tbody>
+      <tfoot>
+      <tr><th colspan="2" style="text-align:center"><button id="buo" onclick="cei()"  >유효성확인</button></th></tr>
+      </tfoot>
+  </table>
+
+  <script>
+    function cei() {
+      var pass1 = document.getElementById("passWord");
+      var passcor1 = document.getElementById("passcor");
+      var emai1 =document.getElementById("emai");
+      var phon1 =document.getElementById("phon");
+      var a=pass1.value;
+      var b=passcor1.value;
+      var c=emai1.value;
+      var d=phon1.value;
+      var passwordRules = /^.*(?=.{6,20})(?=.*[0-9])(?=.*[a-zA-Z]).*$/;
+      var re2 = /^[-A-Za-z0-9_]+[-A-Za-z0-9_.]*[@]{1}[-A-Za-z0-9_]+[-A-Za-z0-9_.]*[.]{1}[A-Za-z]{1,5}$/;
+      var ph =/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/;
+
+      if(!passwordRules.test(a)){
+               alert("비밀번호오류");
+      }
+      if(a!=b) {
+       alert("비밀번호 다름");
+      }
+      if(!re2.test(c)){
+       alert("email다름");
+      }
+      if(!ph.test(d)){
+       alert("전화번호 오류");
+      }
+      alert("회원가입완료")
+
+}
+  </script>
+</body>
+</html>

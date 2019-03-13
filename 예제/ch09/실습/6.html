@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>onwheel</title>
+</head>
+<body>
+  <h3>마우스 휠을 이용한 이미지 확대/축소</h3>
+  <hr>
+  이미지 위에 휠을 굴리면 이미지가 축소 되고 아래로 굴리면 이미지가 확대됩니다.<br>
+  <img src="실습media/tulips.png"  width=250px; height=250px;
+        onwheel="big(event,this)" alt="">
+  <script>
+    function big(e,obj) {
+      if(e.wheelData>0) { obj.width=obj.width*0.95; obj.height=obj.height*0.95;
+      }
+      else { obj.width=obj.width*1.05; obj.height=obj.height*1.05;}
+    }
+  </script>
+</body>
+</html>

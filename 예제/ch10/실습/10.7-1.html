@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function calculate() {
+      var exp =document.getElementsByClassName("exp");
+      var span =document.getElementsByTagName("span");
+      var expArr=new Array();
+      var result=new Array();
+      var total=0;
+      for(var i=0;i<exp.length;i++) {
+        expArr[i]=exp[i].value;
+      }
+      for(var i=0;i<span.length;i++) {
+        var question=span[i].innerHTML;
+        result[i]=eval(question);
+      }
+      for(var i=0;i<exp.length;i++){
+        if (result[i]!=expArr[i]) {
+          span[i].style.textDecoration="line-through";
+          total+=0;
+        }else {span[i].style.textDecoration="none";
+               total+=1;}
+      } document.getElementById("tot").innerHTML=total;
+    }
+  </script>
+</head>
+<body>
+  <h3>산수문제를 풀어 봅시다.</h3>
+  수식을 계산하여 답을 입력하고 채점 버튼을 누르세요.
+  <hr>
+
+  <br><br>
+  <form>
+    <span>5*6</span> <input type="text" class="exp" > <br>
+    <span>7+5*3</span> <input type="text" class="exp"> <br>
+    <span>23*2</span> <input type="text" class="exp"> <br>
+    <span>35-7</span> <input type="text" class="exp"> <br>
+    <input type="button" value="채점" id="tot"
+              onclick="calculate()" >
+  </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>애니메이션 응용</title>
+  <style>
+    @keyframes move {
+      from{transform translateX(0);}
+      to{transform:translateX(-250px);}
+    }
+    p { animation-name:move;
+        animation-duration: 3s;
+        animation-iteration-count:1;}
+  </style>
+</head>
+<body>
+  <h3>애니메이션 응용</h3>
+  <hr>
+  <p style="text-align:right"><img src="실습media/question.png" alt="no">질문 있습니다.</p>
+</body>
+</html>

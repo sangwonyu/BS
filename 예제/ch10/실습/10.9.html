@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body onload="printscreen()">
+  <h3>screen 객체 활용</h3>
+  <hr>
+  스크린의 해상도가 1280x1024보다 작은 경우 웹페이지가 정상적으로 출력되지 않을 수 있음을 알리는
+  경고창 출력.
+  
+  <script>
+    function printscreen() {
+      if(screen.width < 1280 || screen.height < 1024)
+				alert("스크린 해상도가 낮습니디!");
+    }
+  </script>
+</body>
+</html>

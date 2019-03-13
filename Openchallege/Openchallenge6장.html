@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>별그리기</title>
+</head>
+<body>
+  <script>
+    function printstar() {
+    var num=parseInt(prompt("숫자입력",""));
+    if(isNaN(num)){
+     document.write("입력오류입니다.");
+      } for(var i=1;i<=num;i++) {
+        for(var j=1;j<=i;j++) {
+          document.write("*");
+        }
+        document.write(""+"<br>");}
+    return;
+  }
+  </script>
+  <script>
+    printstar();
+  </script>
+</body>
+</html>

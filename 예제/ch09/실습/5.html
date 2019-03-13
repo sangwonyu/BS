@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>방 아무곳 더블클릭</title>
+
+</head>
+<body>
+  <h3>방아무곳 더블클릭</h3>
+  <hr>
+  바탕 아무 곳이나 <b>더블클릭</b>하면 배경색이 랜덤하게 변합니다.
+  <script>
+    window.onload = dd;
+  	function dd() {
+  		window.ondblclick = chan;
+  	}
+
+    function chan() {
+      var col=[0,0,0];
+      for(var i=0;i<3;i++) {
+        col[i]=Math.floor(Math.random()*257);
+      } document.body.style.backgroundColor =
+  			"rgb("+ col[0] + "," + col[1] + "," + col[2] +")";
+
+  	}
+  </script>
+</body>
+</html>

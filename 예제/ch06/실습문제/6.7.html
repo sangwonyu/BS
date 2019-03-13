@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>큰 자리수와 낮은 자리수 같은지 비교</title>
+</head>
+<body>
+  <script>
+    var num =parseInt(prompt("숫자입력",""));
+    var num1=num;
+    while (9<=num){
+        num=Math.floor(num/10);
+    }
+    var most = num;
+    var least = num1%10;
+    if(most!=least) {
+      document.write("다름");
+    } else {document.write("같음");
+  }
+  </script>
+</body>
+</html>

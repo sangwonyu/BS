@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>스폰지밥</title>
+
+</head>
+<body>
+  <h3>클릭하면 90도 회전합니다.</h3>
+  <hr>
+  <img onclick="cli(this)" src="media/spongebob.png"
+       width="200" height="150" alt="no">
+
+  <script>
+    function cli(obj) {
+      obj.style.transform="rotate(90deg)"
+      return;
+    }
+  </script>
+</body>
+</html>

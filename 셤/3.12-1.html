@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>select객체</title>
+  <script>
+    function sel() {
+      var soccer =document.getElementById("soccer");
+      var sele =document.getElementById("sele");
+      soccer.src=sele.options[sele.selectedIndex].value;
+    }
+
+  </script>
+
+</head>
+<body>
+  <h3>select객체</h3>
+  <hr>
+  <select id="sele" onchange="sel()">
+    <option value="이미지/축구.jpg"  selected>축구
+    </option>
+    <option value="이미지/농구.jpg" >농구</option>
+    <option value="이미지/수영.jpg" >수영</option>
+  </select>
+  <img src="축구.jpg" width="300" height="300" alt="no" id="soccer">
+</body>
+</html>

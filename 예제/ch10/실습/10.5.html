@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SetTime</title>
+</head>
+<body onload="timeout()">
+  <h3>div 태그에 시계만들기</h3>
+  <hr>
+  <div id="clock" style="background-Color:rgb(205, 225, 240); border:1px solid gray;"></div>
+  <script>
+  function timeout() {
+    setTimeout("startClock()", 0);
+  }
+  function startClock() {
+			var clock = document.getElementById("clock");
+      var current = new Date();
+      clock.innerHTML = current.toLocaleTimeString();
+		}
+
+  </script>
+</body>
+</html>
